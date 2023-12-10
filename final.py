@@ -10,10 +10,11 @@ st.markdown("# Welcome to my streamlit app!")
 
 st.markdown("# 1. Read in the data, call the dataframe "s"  and check the dimensions of the dataframe ")
 
+# %%
 #s=pd.read_csv("https://raw.githubusercontent.com/cyj601010/streamlit/main/social_media_usage.csv")
 
-
-#print(s.head())
+# %%
+print(s.head())
 
 
 # %%
