@@ -9,36 +9,14 @@ import matplotlib.pyplot as plt
 # ## 1. Read in the data, call the dataframe "s"  and check the dimensions of the dataframe
 
 # %%
-#st.markdown("# Welcome to my streamlit app!")
+
 s=pd.read_csv("https://raw.githubusercontent.com/cyj601010/streamlit/main/social_media_usage.csv")
 print(s.head())
 
 # %%
 st.markdown("# Welcome to my streamlit app!")
-# Income
-if inc <= 3:
-    inc_label = "low income"
-elif inc > 3 and inc < 7:
-    inc_label = "middle income"
-else:
-    inc_label = "high income"
 
-# Degree   
-if deg == 1:
-    deg_label = "college graduate"
-else:
-    deg_label = "non-college graduate"
-    
-# Marital
-if mar == 1:
-    mar_label = "married"
-else:
-    mar_label = "non-married"
-
-st.write(f"This person is {mar_label}, a {deg_label}, and in a {inc_label} bracket")
-
-
-
+st.markdown("# 
 
 # %%
 print(s.dtypes)
@@ -300,5 +278,7 @@ example_high_In_Edu_marital = [[8, 7, 1, 1, 42]]
 probability1 = model.predict_proba(example_high_In_Edu_marital)[:, 1][0]
 
 print(f'Probability for the first example: {probability1:.2%}')
+
+")
 
 
