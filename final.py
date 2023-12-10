@@ -23,7 +23,7 @@ print(s.dtypes)
 
 # %%
 # Check the total number of missing values in each column
-missing_values = s.isnull().sum()
+print( missing_values = s.isnull().sum()
 
 # Print the result
 print("Total number of missing values in each column:")
@@ -278,7 +278,7 @@ example_high_In_Edu_marital = [[8, 7, 1, 1, 42]]
 probability1 = model.predict_proba(example_high_In_Edu_marital)[:, 1][0]
 
 print(f'Probability for the first example: {probability1:.2%}')
-
+)
 ")
 
 
