@@ -6,24 +6,21 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # %% [markdown]
-# ## 1. Read in the data, call the dataframe "s"  and check the dimensions of the dataframe
-
-# %%
-
-s=pd.read_csv("https://raw.githubusercontent.com/cyj601010/streamlit/main/social_media_usage.csv")
-print(s.head())
-
+ 
 # %%
 st.markdown("# Welcome to my streamlit app!")
 
-st.markdown("# 
+st.markdown("# 1. Read in the data, call the dataframe "s"  and check the dimensions of the dataframe ")
+s=pd.read_csv("https://raw.githubusercontent.com/cyj601010/streamlit/main/social_media_usage.csv")
+print(s.head())
+
 
 # %%
 print(s.dtypes)
 
 # %%
 # Check the total number of missing values in each column
-print( missing_values = s.isnull().sum()
+missing_values = s.isnull().sum()
 
 # Print the result
 print("Total number of missing values in each column:")
@@ -38,7 +35,7 @@ print("Number of columns:", num_columns)
 # ---
 
 # %% [markdown]
-# ## 2. Define a function called clean_sm that takes one input, x, and uses `np.where` to check whether x is equal to 1. If it is, make the value of x = 1, otherwise make it 0. Return x. Create a toy dataframe with three rows and two columns and test your function to make sure it works as expected.
+## 2. Define a function called clean_sm that takes one input, x, and uses `np.where` to check whether x is equal to 1. If it is, make the value of x = 1, otherwise make it 0. Return x. Create a toy dataframe with three rows and two columns and test your function to make sure it works as expected.
 
 # %%
 def clean_sm(x):
@@ -278,7 +275,6 @@ example_high_In_Edu_marital = [[8, 7, 1, 1, 42]]
 probability1 = model.predict_proba(example_high_In_Edu_marital)[:, 1][0]
 
 print(f'Probability for the first example: {probability1:.2%}')
-)
-")
+
 
 
