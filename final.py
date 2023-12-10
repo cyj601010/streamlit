@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 # %%
 #st.markdown("# Welcome to my streamlit app!")
-s=pd.read_csv("social_media_usage.csv")
+s=pd.read_csv("https://raw.githubusercontent.com/cyj601010/streamlit/main/social_media_usage.csv")
 print(s.head())
 
 # %%
