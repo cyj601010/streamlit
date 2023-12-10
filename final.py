@@ -15,6 +15,30 @@ print(s.head())
 
 # %%
 st.markdown("# Welcome to my streamlit app!")
+# Income
+if inc <= 3:
+    inc_label = "low income"
+elif inc > 3 and inc < 7:
+    inc_label = "middle income"
+else:
+    inc_label = "high income"
+
+# Degree   
+if deg == 1:
+    deg_label = "college graduate"
+else:
+    deg_label = "non-college graduate"
+    
+# Marital
+if mar == 1:
+    mar_label = "married"
+else:
+    mar_label = "non-married"
+
+st.write(f"This person is {mar_label}, a {deg_label}, and in a {inc_label} bracket")
+
+
+
 
 # %%
 print(s.dtypes)
